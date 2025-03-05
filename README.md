@@ -1,10 +1,11 @@
 # RestpondAng
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.9.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 19.2.0.
 
-## Development server
+## Development server    
+Run `npm run dev` to start application. The application will automatically reload if you change any of the source files.    
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Run `ng serve` for a dev server that works with browser only (Electron wouldn't run with this option). Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
 ## Code scaffolding
 
