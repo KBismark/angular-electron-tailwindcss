@@ -1,0 +1,8 @@
+<button
+  #button
+  [ngClass]="buttonVariants({ variant, size, class: className })"
+  [disabled]="disabled"
+  [type]="type"
+  (click)="onClick.emit($event)">
+  <ng-content></ng-content>
+</button>

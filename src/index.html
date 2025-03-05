@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>RestpondAng</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body class="dark">
+  <app-root></app-root>
+   <style>
+      :root {
+        --color-primary: #A445ED;
+        --color-text: #2D2D2D;
+        --color-grey: #757575;
+        --color-background: #FFFFFF;
+        --color-error: #FF5252;
+        --font-sans: 'Inter', sans-serif;
+        --font-serif: 'Lora', serif;
+        --font-mono: 'Inconsolata', monospace;
+        --font-hedvig: "Hedvig Letters Serif", serif;
+      }
+      *{
+        box-sizing: border-box;
+        scrollbar-width: none;
+      }
+      body{
+        font-optical-sizing: auto;
+        font-style: normal;
+        /* overflow-y: hidden;
+        height: 100vh;
+        width: 100vw; */
+
+      }
+      .font--hedvig{
+        font-family: "Hedvig Letters Serif", serif;
+      }
+      .font--mono{
+        font-family: 'Inconsolata', monospace;
+      }
+      .font--serif{
+        font-family: 'Lora', serif;
+      }
+      .font--sans{
+        font-family: 'Inter', sans-serif;
+      }
+
+      .font--code{
+        white-space: pre;
+        /* background: rgb(40, 44, 52);
+        color: rgb(171, 178, 191); */
+        /* text-shadow: rgba(0, 0, 0, 0.3) 0px 1px; */
+        font-family: "Fira Code", "Fira Mono", Menlo, Consolas, "DejaVu Sans Mono", monospace;
+        direction: ltr;
+        text-align: left;
+        word-spacing: normal;
+        word-break: normal;
+        line-height: 1.5;
+        tab-size: 2;
+        -webkit-hyphens: none;
+        hyphens: none;
+      }
+
+      button{
+        outline: none;
+      }
+
+
+      .flash-bg{
+        animation: bg-color-flash 0.5s ease-in-out;
+        border-radius: 6px;
+      }
+
+      @keyframes bg-color-flash {
+        from {
+          background-color: rgba(245, 33, 104, 0.4);
+        }
+        to {
+          background-color: rgb(255, 10, 92, 0.2);
+        }
+      }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Hedvig+Letters+Serif:opsz@12..24&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=Lora:wght@400;500;600;700&display=swap" rel="stylesheet">
+</body>
+</html>

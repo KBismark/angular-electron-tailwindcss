@@ -1,0 +1,28 @@
+<div class="py-0 flex justify-between text-gray-600">
+  <div class="inline-flex -mt-1">
+    <button title='Minimize' (click)="handleMinimize()" class="undraggable rounded-md text-gray-400 px-[18px] py-2 hover:bg-gray-300 hover:text-gray-900">
+      &#8211;
+    </button>
+    <button title='Maximize' (click)="handleToggle()" class="undraggable rounded-md text-gray-400 px-4 lgx:px-4 py-2 hover:bg-gray-300 hover:text-gray-900">
+      <!-- {{isMaximized ? '\u2752' : '⃞'}} -->
+      @if(isMaximized){
+        <lucide-angular [img]="icons.Minimize" [size]="15" />
+      }
+      @else {
+        <lucide-angular [img]="icons.Maximize" [size]="15" />
+      }
+    </button>
+    <button title='Close' (click)="handleClose()" class="undraggable rounded-md text-gray-400 px-4 py-2 hover:bg-red-500 hover:text-white">
+      &#10005;
+    </button>
+  </div>
+</div>
+<div class="text-gray-900 undraggable hidden">
+  <div class="flex text-center">
+    <div class="text-sm w-8  hover:bg-gray-700">File</div>
+    <div class="text-sm w-8   hover:bg-gray-700">Edit</div>
+    <div class="text-sm w-10  hover:bg-gray-700">View</div>
+    <div class="text-sm w-14  hover:bg-gray-700 ">Window</div>
+    <div class="text-sm w-9  hover:bg-gray-700 ">Help</div>
+  </div>
+</div>
